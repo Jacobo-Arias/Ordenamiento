@@ -60,7 +60,9 @@ def countingSort(array):
     output = [0] * size
 
     # Initialize count array
-    count = [0] * size*2
+    #! Se cambia el size*2 por size*4 porque si bien para el ultimo caso son 500k
+    #! son 2 millones de posibilidades
+    count = [0] * size*4
 
     # Store the count of each elements in count array
     for i in range(0, size):
